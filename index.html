@@ -10,16 +10,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <style>
+        .nav a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
 <body>
     <div class="total_abc">
         <div class="nav">
-            <div class="nav_a"><b>Yummy<b style="color: red;">.</b ></b></div>
-            <div class="nav_b"><b>Home</b></div>
-            <div class="nav_c"><b>About</b></div>
-            <div class="nav_d"><b>Menu</b></div>
-            <div class="nav_e"><b>Events</b></div>
-            <div class="nav_f"><b>Chef</b></div>
-            <div class="nav_g"><b>Gallery</b></div>
+            <div class="nav_a"><b>Yummy<b style="color: red;">.</b></b></div>
+            <a href="#head">
+                <div class="nav_b"><b>Home</b></div>
+            </a>
+            <a href="#content">
+                <div class="nav_c"><b>About</b></div>
+            </a>
+            <a href="#menu">
+                <div class="nav_d"><b>Menu</b></div>
+            </a>
+            <a href="#events">
+                <div class="nav_e"><b>Events</b></div>
+            </a>
+            <a href="#chefs">
+                <div class="nav_f"><b>Chef</b></div>
+            </a>
+            <a href="#gallery">
+                <div class="nav_g"><b>Gallery</b></div>
+            </a>
             <select class="nav_h" style="border: 0;border-radius: 10px;">
                 <option>Dropdown</option>
                 <option>Dropdown 1</option>
@@ -27,12 +46,13 @@
                 <option>Dropdown 3</option>
                 <option>Dropdown 4</option>
             </select>
-            <div class="nav_i"><b>Contact</b></div>
-            <button class="nav_j" style="border-radius: 20px;">Book a Table</button>
+            <a href="#contact">
+                <div class="nav_i"><b>Contact</b></div>
+            </a>
             <i class="barr fa-solid fa-bars" id="bar" style="font-size: xx-large;"></i>
         </div>
 
-        <div class="head">
+        <div class="head" id="head">
             <div class="text">
                 <div class="head_a">
                     <h1>Enjoy Your Healthy Delicious Food</h1>
@@ -47,7 +67,7 @@
             <img class="pic" src="./pro-img-1.png" />
         </div>
 
-        <div class="content">
+        <div class="content" id="content">
             <div class="text_a">About Us</div>
             <div class="text_b">
                 <div class="text_c">Learn More </div>
@@ -74,10 +94,10 @@
                     <div class="text_i">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                         occaecat cupidatat non proident</div>
-                      
-                        <img class="pic_a" src="./about-2.jpg" />
-                  <!-- <i class="play_icon fa-solid fa-play"></i> -->
-            
+
+                    <img class="pic_a" src="./about-2.jpg" />
+                    <!-- <i class="play_icon fa-solid fa-play"></i> -->
+
                 </div>
             </div>
         </div>
@@ -127,7 +147,7 @@
                 <div class="con_d">Workers</div>
             </div>
         </div>
-        <div class="total_menu">
+        <div class="total_menu" id="menu">
             <div class="our">OUR MENU</div>
             <div class="yummy_menu">
                 <p>Check Our</p>
@@ -292,7 +312,7 @@
             </div>
         </div>
 
-        <div class="events">
+        <div class="events" id="events">
             <p style="color: grey;text-align: center;">EVENTS</p>
             <div class="moments">
                 <p>SHARE</p>
@@ -341,7 +361,7 @@
         </div>
 
 
-        <div class="chefs">
+        <div class="chefs" id="chefs">
             <p style="color: grey;text-align: center;margin-top: 30px;">CHEFS</p>
             <div class="our_chef">
                 <p>OUR</p>
@@ -402,23 +422,26 @@
             </div>
         </div>
 
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             <p style="text-align: center;color: grey;padding-top: 20px;">GALLERY</p>
-            <div class="check_gallery"><p>CHECK</p><p style="color: red;">OUR GALLERY</p></div>
+            <div class="check_gallery">
+                <p>CHECK</p>
+                <p style="color: red;">OUR GALLERY</p>
+            </div>
 
             <div class="gallery_pic">
                 <img class="gallery_a" src="./gallery-1.jpg" style="transition-duration: 0.1s;">
-                <img class="gallery_b" src="./gallery-2.jpg"  style="transition-duration: 0.1s;">
-                <img class="gallery_c" src="./gallery-3.jpg"  style="transition-duration: 0.1s;">
-                <img class="gallery_d" src="./gallery-5.jpg"  style="transition-duration: 0.1s;">
-                <img class="gallery_e" src="./gallery-6.jpg"  style="transition-duration: 0.1s;">
+                <img class="gallery_b" src="./gallery-2.jpg" style="transition-duration: 0.1s;">
+                <img class="gallery_c" src="./gallery-3.jpg" style="transition-duration: 0.1s;">
+                <img class="gallery_d" src="./gallery-5.jpg" style="transition-duration: 0.1s;">
+                <img class="gallery_e" src="./gallery-6.jpg" style="transition-duration: 0.1s;">
             </div>
 
         </div>
 
-    
 
-        <div class="map">
+
+        <div class="map" id="contact">
             <p style="color: grey;text-align: center;">CONTACT</p>
             <div class="need_help">
                 <p>Need HELP ?</p>
@@ -457,97 +480,99 @@
                 </div>
             </div>
             <div class="all_big">
-            <div class="big_address">
-                <div class="map_red">
-                    <i class="fa-solid fa-map" style="font-size: x-large;color: white;"></i>
+                <div class="big_address">
+                    <div class="map_red">
+                        <i class="fa-solid fa-map" style="font-size: x-large;color: white;"></i>
+                    </div>
+                    <div class="way">
+                        <p style="color: grey;font-size: 24px;"><b>Our Address</b></p>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
                 </div>
-                <div class="way">
-                    <p style="color: grey;font-size: 24px;"><b>Our Address</b></p>
-                    <p>A108 Adam Street, New York, NY 535022</p>
+                <div class="big_email">
+                    <div class="mail_red">
+                        <i class="fa-solid fa-envelope" style="font-size: x-large;color: white;"></i>
+                    </div>
+                    <div class="mail_us">
+                        <p style="color: grey;font-size: 24px;"><b>Email Us</b></p>
+                        <p>contact@example.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="big_email">
-                <div class="mail_red">
-                    <i class="fa-solid fa-envelope"  style="font-size: x-large;color: white;"></i>
-                </div>
-                <div class="mail_us">
-                    <p style="color: grey;font-size: 24px;"><b>Email Us</b></p>
-                    <p>contact@example.com</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="all_big_a">
-            <div class="big_call">
-                <div class="phone_red">
-                    <i class="fa-solid fa-phone" style="font-size: x-large;color: white;"></i>
+            <div class="all_big_a">
+                <div class="big_call">
+                    <div class="phone_red">
+                        <i class="fa-solid fa-phone" style="font-size: x-large;color: white;"></i>
+                    </div>
+                    <div class="call_a1">
+                        <p style="color: grey;font-size: 24px;"><b>Call Us</b></p>
+                        <p>+1 5589 55488 55</p>
+                    </div>
                 </div>
-                <div class="call_a1">
-                    <p style="color: grey;font-size: 24px;"><b>Call Us</b></p>
-                    <p>+1 5589 55488 55</p>
+                <div class="big_opening">
+                    <div class="opening_red">
+                        <i class="fa-solid fa-share-nodes" style="font-size: x-large;color: white;"></i>
+                    </div>
+                    <div class="opening_us">
+                        <p style="color: grey;font-size: 24px;"><b>Openening Hours</b></p>
+                        <p>Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
+                    </div>
                 </div>
             </div>
-            <div class="big_opening">
-                <div class="opening_red">
-                    <i class="fa-solid fa-share-nodes"  style="font-size: x-large;color: white;"></i>
+            <div class="final_box">
+                <div class="name_box">
+                    <input class="name_box_a" placeholder="Your Name">
+                    <input class="mail_box_a" placeholder="Your Email">
                 </div>
-                <div class="opening_us">
-                    <p style="color: grey;font-size: 24px;"><b>Openening Hours</b></p>
-                    <p>Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
+                <div class="subjectie">
+                    <input class="subject_a" placeholder="Subject">
+                </div>
+                <div class="last_message">
+                    <textarea class="last_message_a" placeholder="Message"></textarea>
+                </div>
+                <div class="button_final">
+                    <button class="table_final_a">Send Message</button>
                 </div>
             </div>
-        </div>
-        <div class="final_box">
-            <div class="name_box">
-                <input class="name_box_a" placeholder="Your Name">
-                <input class="mail_box_a" placeholder="Your Email">
-            </div>
-            <div class="subjectie">
-                <input class="subject_a" placeholder="Subject">
-        </div>
-       <div class="last_message">
-        <textarea class="last_message_a" placeholder="Message"></textarea>
-       </div>
-       <div class="button_final">
-        <button class="table_final_a">Send Message</button>
-       </div>
-        </div>
         </div>
 
         <div class="last">
-        <div class="last_ab">
-            <div class="last_main">
-                <div class="address"> <i class="fa-solid fa-location-dot" style="margin: 10px;"></i><b>Address</b></div>
-                <div class="main_1" style="color: grey;">A108 Adam Street</div>
-                <div class="main_2" style="color: grey;">New York, NY 535022 - US</div>
+            <div class="last_ab">
+                <div class="last_main">
+                    <div class="address"> <i class="fa-solid fa-location-dot" style="margin: 10px;"></i><b>Address</b>
+                    </div>
+                    <div class="main_1" style="color: grey;">A108 Adam Street</div>
+                    <div class="main_2" style="color: grey;">New York, NY 535022 - US</div>
 
 
-            </div>
-            <div class="last_middle">
-                <div class="reservations"><i class="fa-solid fa-phone" style="margin: 10px;"></i><b>Reservations</b>
                 </div>
-                <div class="middle_1" style="color: grey;"><b>Phone: </b>+1 5589 55488 55</div>
-                <div class="middle_2" style="color: grey;"><b>Email:</b> info@example.com</div>
-            </div>
-            <div class="last_open">
-                <div class="opening"><i class="fa-solid fa-clock" style="margin: 10px;"></i><b>Opening Hours</b></div>
-                <div class="open_a" style="color: grey;"><b>Mon-Sat: 11AM </b>- 23PM</div>
-                <div class="open_b" style="color: grey;">Sunday: Closed</div>
-            </div>
-            <div class="last_follow">
-                <div class="follow"><b>Follow Us</b></div>
-                <div class="follow_fb"><i class="fa-brands fa-facebook" style="margin: 10px;"></i> <i
-                        class="fa-brands fa-twitter" style="margin: 10px;"></i> <i class="fa-brands fa-instagram"
-                        style="margin: 10px;"></i><i class="fa-brands fa-linkedin" style="margin: 10px;"></i></div>
-            </div>
-            
-        </div>
+                <div class="last_middle">
+                    <div class="reservations"><i class="fa-solid fa-phone" style="margin: 10px;"></i><b>Reservations</b>
+                    </div>
+                    <div class="middle_1" style="color: grey;"><b>Phone: </b>+1 5589 55488 55</div>
+                    <div class="middle_2" style="color: grey;"><b>Email:</b> info@example.com</div>
+                </div>
+                <div class="last_open">
+                    <div class="opening"><i class="fa-solid fa-clock" style="margin: 10px;"></i><b>Opening Hours</b>
+                    </div>
+                    <div class="open_a" style="color: grey;"><b>Mon-Sat: 11AM </b>- 23PM</div>
+                    <div class="open_b" style="color: grey;">Sunday: Closed</div>
+                </div>
+                <div class="last_follow">
+                    <div class="follow"><b>Follow Us</b></div>
+                    <div class="follow_fb"><i class="fa-brands fa-facebook" style="margin: 10px;"></i> <i
+                            class="fa-brands fa-twitter" style="margin: 10px;"></i> <i class="fa-brands fa-instagram"
+                            style="margin: 10px;"></i><i class="fa-brands fa-linkedin" style="margin: 10px;"></i></div>
+                </div>
 
-        <div class="copyright_final">
-            <p>© Copyright <b>Yummy</b>. All Rights Reserved</p>
-            <p>Designed by <span style="color: white;">BootstrapMade</span></p>
+            </div>
+
+            <div class="copyright_final">
+                <p>© Copyright <b>Yummy</b>. All Rights Reserved</p>
+                <p>Designed by <span style="color: white;">BootstrapMade</span></p>
+            </div>
         </div>
-    </div>
     </div>
     </div>
     </div>
@@ -562,21 +587,21 @@
         $(".carousel_4").hide()
         $(".breakfast").click(function () {
             $(".startie").hide()
-            $(".starters").css("color","grey")
+            $(".starters").css("color", "grey")
             $(".lunchie").hide()
             $(".dine").hide()
             $(".breakie").show()
         })
         $(".lunch").click(function () {
             $(".startie").hide()
-            $(".starters").css("color","grey")
+            $(".starters").css("color", "grey")
             $(".breakie").hide()
             $(".dine").hide()
             $(".lunchie").show()
         })
         $(".starters").click(function () {
             $(".startie").show()
-            $(".starters").css("color","red")
+            $(".starters").css("color", "red")
             $(".breakie").hide()
             $(".dine").hide()
             $(".lunchie").hide()
@@ -585,7 +610,7 @@
             $(".startie").hide()
             $(".breakie").hide()
             $(".dine").show()
-            $(".starters").css("color","grey")
+            $(".starters").css("color", "grey")
             $(".lunchie").hide()
         })
         $(".dot_1").click(function () {
@@ -612,15 +637,14 @@
             $(".carousel_1").hide()
             $(".carousel_3").hide()
         })
-        $("#bar").click(function(){
-            $(".nav_b").show()
-            $(".nav_c").show()
-            $(".nav_d").show()
-            $(".nav_e").show()
-            $(".nav_f").show()
-            $(".nav_g").show()
-            $(".nav_h").show()
-
+        $("#bar").click(function () {
+            $(".nav_b").toggle()
+            $(".nav_c").toggle()
+            $(".nav_d").toggle()
+            $(".nav_e").toggle()
+            $(".nav_f").toggle()
+            $(".nav_g").toggle()
+            $(".nav_h").toggle()
         })
 
     })
