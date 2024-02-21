@@ -4936,18 +4936,22 @@ body{
     
     .content{
         padding: 20px;
-        /* width: 100%; */
+        width: 100%;
     }
     .text_a{
         text-align: center;
         font-size: 20px;
-        /* width: 100%; */
+        width: 100%;
+        margin-left: 50px;
     }
     .text_b{
         font-family:  "Amatic SC", sans-serif;
         font-size: 50px;
        display: flex;
        justify-content: center;
+       width: 100%;
+       text-align: center;
+       margin-left: 50px;
     }
     
     .text_d{
@@ -5725,6 +5729,7 @@ body{
         font-family:  "Amatic SC", sans-serif;
         font-size: 50px;
         display: flex;
+        flex-wrap: wrap;
        justify-content: center;
        text-indent: 10px;
        width: 100%;
@@ -5868,7 +5873,7 @@ body{
     
     .chefs{
         background-color:  rgb(231, 229, 229);
-        height: 350vh;
+        height: 300vh;
         padding: 20px;
     }
     .our_chef{
@@ -6254,7 +6259,7 @@ body{
     .final_box{
         background-color: rgb(223, 213, 195);
         /* margin: 50px; */
-        height: 100vh;
+        height: 80vh;
     }
     .name_box{
         display: flex;
